@@ -23,19 +23,21 @@
     border-radius: 10px;
     box-shadow: 5px 5px 5px #4a00e0;
     flex-direction: column;
+  
     .title{
             font-size: 60px;
             font-weight: 700;
             background: linear-gradient(to top, #4a00e0, #8e2de2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            filter: drop-shadow(1px 1px 1px #8e2de2);
     }
     .skillsLogo{
         margin: 4rem;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap:4rem
+        gap:4rem;
 
     }
 }

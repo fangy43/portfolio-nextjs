@@ -1,0 +1,6 @@
+.img{
+   height:100px;
+    &:hover {
+       transform: translatey(-5px);
+    }
+}

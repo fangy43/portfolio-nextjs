@@ -1,5 +1,5 @@
 import React from 'react'
-
+import styles from './SkillItem.module.scss'
 export const SkillItem = ({imgLink,name}) => {
     console.log(imgLink)
     return (
@@ -9,7 +9,7 @@ export const SkillItem = ({imgLink,name}) => {
             alignItems:"center",
             width:"120px"
         }}>
-        <img style={{height:"100px"}} src={imgLink}/>
+        <img className={styles.img} src={imgLink}/>
         <h3>{name}</h3>
         </div>
         
