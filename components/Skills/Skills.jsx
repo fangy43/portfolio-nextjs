@@ -37,7 +37,7 @@ const skillList = [
     },
     {
         skill:"Git",
-        img:"https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+        img:"https://miro.medium.com/max/325/0*oNDKpj0zdg_UELBE.png"
     },
     {
         skill:"Postman",
