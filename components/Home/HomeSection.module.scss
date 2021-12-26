@@ -19,7 +19,7 @@
             .name {
                 font-size: 80px;
                 font-weight: 700;
-
+                width: fit-content;
                 text-transform: uppercase;
                 background: linear-gradient(to top, #ff2828, #f03fca);
                 background-clip: text;
@@ -32,6 +32,7 @@
             .role {
                 font-size: 42px;
                 font-weight: 500;
+                width: fit-content;
                 //background: linear-gradient(to top, #4a00e0, #8e2de2);
                 background: linear-gradient(to bottom, #fda517, #fff12d);
                 background-clip: text;
@@ -105,6 +106,36 @@
         .box:hover {
             box-shadow: 0 0 10px #fda517;
             transform: translateY(-0.25em);
+        }
+    }
+}
+.footer {
+    .arrow {
+        width: 35px;
+        height: 27px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        z-index: 10;
+        animation: arrow 1.5s infinite;
+        border-style: none;
+        outline: 0;
+        margin: 2rem 0;
+    }
+    .arrowimg {
+        -webkit-filter: grayscale(1) invert(1);
+        filter: grayscale(1) invert(1);
+    }
+
+    @keyframes arrow {
+        0% {
+            bottom: 0px;
+        }
+        50% {
+            bottom: 15px;
+        }
+        100% {
+            bottom: 0px;
         }
     }
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './SkillItem.module.scss'
 export const SkillItem = ({imgLink,name}) => {
     console.log(imgLink)

@@ -1,43 +1,71 @@
-.container{
+.container {
     width: 100%;
-    // background: #8e2de2; /* fallback for old browsers */
-    // background: -webkit-linear-gradient(to left, #4a00e0, #8e2de2); /* Chrome 10-25, Safari 5.1-6 */
-    // background: linear-gradient(
-    //     to left,
-    //     #4a00e0,
-    //     #8e2de2
-    // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    padding-top: 7rem;
 }
-.skills{
+.title {
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(to bottom, #fda517, #fff12d);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 0px 1px #fda517);
+    &:hover {
+        filter: drop-shadow(0px 0px 5px #fda517);
+    }
+}
+.skills {
     width: 100%;
     max-width: 1440px;
-    height: 80%;
-    margin: 5rem auto 0;
-    padding: 2rem 2rem;
+    margin: 3rem auto 0;
+    padding: 2rem;
     display: flex;
     align-items: center;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px #4a00e0;
+    box-shadow: 5px 5px 0px #fda517;
     flex-direction: column;
-  
-    .title{
-            font-size: 60px;
-            font-weight: 700;
-            background: linear-gradient(to top, #4a00e0, #8e2de2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(1px 1px 1px #8e2de2);
-    }
-    .skillsLogo{
+
+    
+    .skillsLogo {
         margin: 4rem;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap:4rem;
-
+        gap: 4rem;
     }
 }
+.footer {
+    .arrow {
+        width: 35px;
+        height: 27px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        z-index: 10;
+        animation: arrow 1.5s infinite;
+        border-style: none;
+        outline: 0;
+        margin: 2rem 0;
+    }
+    .arrowimg {
+        -webkit-filter: grayscale(1) invert(1);
+        filter: grayscale(1) invert(1);
+    }
+
+    @keyframes arrow {
+        0% {
+            bottom: 0px;
+        }
+        50% {
+            bottom: 15px;
+        }
+        100% {
+            bottom: 0px;
+        }
+    }
+}
+

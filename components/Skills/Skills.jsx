@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from '../Skills/Skills.module.scss'
 import { SkillItem } from './SkillItem'
 
@@ -52,13 +51,24 @@ const skillList = [
 export const Skills = () => {
     return (
         <div className={styles.container}>
+            <div className={styles.title}>Skills</div>
             <div className={styles.skills}>
-                <div className={styles.title}>Skills</div>
+                
                 <div className={styles.skillsLogo}>
                     {skillList.map((s)=>
                     <SkillItem imgLink={s.img} name={s.skill}/>
                     )}
                 </div>
+            </div>
+            <div className={styles.footer}>
+                <a href="#Projects" className={styles.arrow}>
+                    <img
+                        src="/down-arrow.png"
+                        width={30}
+                        height={30}
+                        className={styles.arrowimg}
+                    />
+                </a>
             </div>
         </div>
     )

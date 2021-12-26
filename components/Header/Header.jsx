@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from '../Header/Header.module.scss'
 import Link from 'next/link'
 
@@ -17,12 +16,12 @@ export const Header = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="#Skill">
+                            <Link href="#Skills">
                                 <a>Skills</a>
                             </Link>
                         </li>
                         <li>
-                            <Link href="#Project">
+                            <Link href="#Projects">
                                 <a>Projects</a>
                             </Link>
                         </li>

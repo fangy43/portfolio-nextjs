@@ -1,5 +1,6 @@
 .container {
-   background: radial-gradient(#0c0549, #010c1f,#000816);
+   background: radial-gradient(#070424, #010c1f,#000816);
+   //background: radial-gradient(#040725, #020a18,#000000);
    -webkit-user-select: none;  /* Chrome all / Safari all */
    -moz-user-select: none;     /* Firefox all */
    -ms-user-select: none;      /* IE 10+ */
@@ -11,6 +12,11 @@
     z-index: 1;
 }
 
+.longsection {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
 
 .circles{
     position: absolute;
