@@ -12,7 +12,7 @@ export const ProjectCard = ({ project }) => {
                 <div className={styles.description}>{project.description}</div>
             </div>
             <div className={styles.link}>
-            <a href="https://github.com/fangy43" target="_blank">
+            <a href="https://github.com/fangy43" target="_blank" rel="noreferrer">
                 <button className={styles.btn}>See Github</button>
             </a>
             </div>

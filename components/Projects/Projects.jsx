@@ -49,15 +49,15 @@ export const Projects = () => {
             <div className={styles.title}>Projects</div>
             <div className={styles.featured}>
                 <div className={styles.subtitle}>Featured</div>
-                {cardList.map((project) =>
-                    <ProjectCard project={project} />
+                {cardList.map((project,index) =>
+                    <ProjectCard project={project} key={index} />
                 )}
             </div>
             <div className={styles.other}>
                 <div className={styles.subtitle}>Others</div>
                 <div className={styles.otherList}>
-                    {githubRepos.map((project) =>
-                        <OtherCard project={project} />
+                    {githubRepos.map((project,index) =>
+                        <OtherCard project={project} key={index} />
                     )}
                 </div>
             </div>

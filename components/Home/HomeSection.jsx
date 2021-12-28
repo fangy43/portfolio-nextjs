@@ -14,13 +14,13 @@ export const HomeSection = () => {
                         Software Developer
                     </div>
                     <div className={styles.introduce}>
-                        Hi! My name is Fang. I’m 4th-year student at King Mongkut's Institute of Technology Ladkrabang. I've worked in the field of software development. Now I'm looking for a job that will improve my software development skills
+                        Hi! My name is Fang. I&apos;m 4th-year student at King Mongkut's Institute of Technology Ladkrabang. I've worked in the field of software development. Now I'm looking for a job that will improve my software development skills
                     </div>
                     <div className={styles.btnbox}>
                         <Link href="#Skills">
                             <button className={styles.btn1}>Get Started</button>
                         </Link>
-                        <a href="https://github.com/fangy43" target="_blank">
+                        <a href="https://github.com/fangy43" target="_blank" rel="noreferrer">
                             <button className={styles.btn2}>Learn More</button>
                         </a>
 

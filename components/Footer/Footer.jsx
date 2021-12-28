@@ -8,7 +8,7 @@ export const Footer = () => {
                 <i className="fa fa-phone"></i>
                     <div className={styles.details}>
                         <div className={styles.method}>Tel</div>
-                        <div className={styles.data}>080-2848185</div>
+                        <div className={styles.data}>080-284-8185</div>
                     </div>
                 </div>
                 <div className={styles.contactItem}>
