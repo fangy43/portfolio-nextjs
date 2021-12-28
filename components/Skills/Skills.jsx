@@ -55,8 +55,8 @@ export const Skills = () => {
             <div className={styles.skills}>
                 
                 <div className={styles.skillsLogo}>
-                    {skillList.map((s)=>
-                    <SkillItem imgLink={s.img} name={s.skill}/>
+                    {skillList.map((s,i)=>
+                    <SkillItem imgLink={s.img} name={s.skill} key={i}/>
                     )}
                 </div>
             </div>

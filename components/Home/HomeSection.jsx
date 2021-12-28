@@ -14,7 +14,7 @@ export const HomeSection = () => {
                         Software Developer
                     </div>
                     <div className={styles.introduce}>
-                        Hi! My name is Fang. I&apos;m 4th-year student at King Mongkut's Institute of Technology Ladkrabang. I've worked in the field of software development. Now I'm looking for a job that will improve my software development skills
+                        Hi! My name is Fang. I&apos;m 4th-year student at King Mongkut&apos;s Institute of Technology Ladkrabang. I&apos;ve worked in the field of software development. Now I&apos;m looking for a job that will improve my software development skills
                     </div>
                     <div className={styles.btnbox}>
                         <Link href="#Skills">
