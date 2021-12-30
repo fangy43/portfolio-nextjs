@@ -54,7 +54,11 @@
 }
 @media only screen and (max-width: 768px) {
     .container {
+        height: 48px;
         .content {
+            .logo {
+                font-size: 28px;
+            }
             .links {
                 display: none;
             }
