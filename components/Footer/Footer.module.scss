@@ -43,3 +43,30 @@
         }
     }
 }
+@media only screen and (max-width: 1228px) {
+    .container{
+        .title {
+            font-size: 28px;
+        }
+        .contactList{
+            flex-direction: column;
+           margin-top: 0;
+            .contactItem{
+                font-size: 16px;
+                i{
+                    position: relative;
+                    font-size: 36px;
+                    top:5px;
+                    margin-right: 1rem ;
+                }
+                .details{
+                    .method{
+                        font-size: 10px;
+                        opacity: 0.5;
+                    }
+                }
+            
+            }
+        }
+    }
+}

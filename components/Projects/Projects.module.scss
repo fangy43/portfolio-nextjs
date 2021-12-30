@@ -50,7 +50,7 @@
 
 @media only screen and (max-width: 1228px) {
     .container {
-        padding:4rem 1rem 0;
+        padding:4rem 0 0;
         .title {
             font-size: 36px;
         }
@@ -64,7 +64,7 @@
             .otherList{
                 display: grid;
                 grid-template-columns: auto;
-                gap: 0 2rem;
+                gap: 0;
             }
         }   
     }
