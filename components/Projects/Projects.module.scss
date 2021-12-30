@@ -45,6 +45,28 @@
             grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 0 2rem;
         }
+    }   
+}
+
+@media only screen and (max-width: 1228px) {
+    .container {
+        padding:4rem 1rem 0;
+        .title {
+            font-size: 36px;
+        }
+        .subtitle {
+            font-size: 24px;
+        }
+        .other {
+            width: 100%;
+            height: 100%;
+            margin-top: 1rem;
+            .otherList{
+                display: grid;
+                grid-template-columns: auto;
+                gap: 0 2rem;
+            }
+        }   
     }
     
 }
