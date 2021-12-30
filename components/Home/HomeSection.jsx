@@ -1,7 +1,6 @@
 import styles from '../Home/HomeSection.module.scss'
 import Link from 'next/link'
 
-
 export const HomeSection = () => {
     return (
         <div className={styles.wrapper}>
@@ -27,14 +26,14 @@ export const HomeSection = () => {
                     </div>
                 </div>
                 <div className={styles.box}>
-                    <img
-                        src="/Profile.png"
-                        alt="Picture of Nattarat"
-                        width={400}
-                        height={400}
-                        quality={100}
-                        className={styles.img}
-                    />
+                   
+                        <img
+                            src="/Profile.png"
+                            alt="Picture of Nattarat"
+                            quality={100}
+                            className={styles.img}
+                        />
+                      
                 </div>
             </div>
             <div className={styles.footer}>

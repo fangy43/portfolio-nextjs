@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Header, HomeSection, Skills, Projects, Footer } from '../components'
 import styles from '../styles/Home.module.scss'
 
@@ -18,7 +17,6 @@ export default function Home() {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
       </Head>
       <Header />
-
       <div className={styles.section} id="Home">
         <HomeSection />
       </div>
@@ -32,6 +30,16 @@ export default function Home() {
         <Footer />
       </div>
       <ul className={styles.circles}>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
         <li></li>
         <li></li>
         <li></li>
