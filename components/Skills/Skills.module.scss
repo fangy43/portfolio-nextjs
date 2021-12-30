@@ -69,3 +69,33 @@
     }
 }
 
+@media only screen and (max-width: 1228px) {
+    .container {
+        padding-top: 4rem;
+        padding: 0 1rem;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .skills {
+        width: 100%;
+        margin: 1rem auto;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 0px #fda517;
+        flex-direction: column;
+    
+        
+        .skillsLogo {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    }
+}
+

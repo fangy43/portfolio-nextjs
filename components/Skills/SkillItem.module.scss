@@ -1,6 +1,24 @@
-.img{
-   height:100px;
-    &:hover {
-       transform: translatey(-5px);
-    }
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 120px;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 2;
+}
+.img {
+   height: 100px;
+   &:hover {
+      transform: translatey(-5px);
+   }
+}
+@media only screen and (max-width: 1228px) {
+   .container {
+      width: 80px;
+      font-size: 14px;
+   }
+   .img {
+      height: 50px;
+   }
 }
