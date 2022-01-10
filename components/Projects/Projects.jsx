@@ -3,11 +3,12 @@ import { useState, useEffect } from 'react';
 import styles from '../Projects/Projects.module.scss'
 import { ProjectCard } from './ProjectCard'
 import { OtherCard } from './OtherCard'
+import css from 'classnames'
 const cardList = [
     {
         title: "Educa",
         img: "https://github.com/educa-kmitl/educa-frontend/raw/master/src/img/git-cover.jpg",
-        description: "Learning Platform web application for Software Process subject at KMITL. Front-end development by ReactJS",
+        description: "Learning Platform web application for Software Development Process subject at KMITL. Front-end development by ReactJS",
         period: "2/2020 - 5/2020",
         link: "https://github.com/educa-kmitl"
     },
@@ -26,7 +27,7 @@ const ghexclude = [
     "Dragon-Revenge"
 ]
 
-export const Projects = () => {
+export const Projects = ({darkMode}) => {
     const [githubRepos, setGithubRepos] = useState([])
 
     const fetchRepos = () => {
@@ -45,19 +46,19 @@ export const Projects = () => {
     }, [])
 
     return (
-        <div className={styles.container}>
+        <div className={css(darkMode ? styles.container : styles.lightContainer)}>
             <div className={styles.title}>Projects</div>
             <div className={styles.featured}>
                 <div className={styles.subtitle}>Featured</div>
                 {cardList.map((project,index) =>
-                    <ProjectCard project={project} key={index} />
+                    <ProjectCard project={project} key={index} darkMode={darkMode}/>
                 )}
             </div>
             <div className={styles.other}>
                 <div className={styles.subtitle}>Others</div>
                 <div className={styles.otherList}>
                     {githubRepos.map((project,index) =>
-                        <OtherCard project={project} key={index} />
+                        <OtherCard project={project} key={index} darkMode={darkMode}/>
                     )}
                 </div>
             </div>

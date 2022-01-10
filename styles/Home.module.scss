@@ -1,5 +1,5 @@
 .container {
-   background: radial-gradient(#070424, #010c1f,#000816);
+  // background: radial-gradient(#04030e, #01040a,#000000);
    //background: radial-gradient(#040725, #020a18,#000000);
    -webkit-user-select: none;  /* Chrome all / Safari all */
    -moz-user-select: none;     /* Firefox all */
@@ -9,6 +9,18 @@
    position: relative;
    overflow: auto;
 }
+
+.darkContainer {
+    background: radial-gradient(#04030e, #01040a,#000000);
+    //background: radial-gradient(#040725, #020a18,#000000);
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
+    height: 100%;
+    position: relative;
+    overflow: auto;
+ }
 .section {
     height: 100vh;
     position: relative;
@@ -35,8 +47,7 @@
     margin-top: 5rem;
     position: relative;
     z-index: 1;
-
-     background: linear-gradient(to bottom, #000000, #04050c); 
+    background: linear-gradient(to bottom, #000000); 
 }
 
 .circles{
@@ -313,14 +324,14 @@
 
     0%{
         transform: translateX(0) translateY(0)rotate(0deg);
-        opacity: 0.8;
-        border-radius: 0;
+        opacity: 0.5;
+        border-radius: 20%;
     }
 
     100%{
         transform: translateX(2000px) translateY(-2000px) rotate(720deg);
         opacity: 0;
-        border-radius: 50%;
+        border-radius: 60%;
     }
 
 }

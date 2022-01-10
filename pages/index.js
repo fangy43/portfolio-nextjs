@@ -1,67 +1,71 @@
 import Head from 'next/head'
 import { Header, HomeSection, Skills, Projects, Footer } from '../components'
 import styles from '../styles/Home.module.scss'
-
+import { useState ,useEffect} from 'react'
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(true)
+
   return (
-    <div className={styles.container}>
+    <div className={darkMode===true?styles.darkContainer:styles.container}>
       <Head>
         <title>Fangy</title>
         <meta name="description" content="Nattarat Serirat's Portfolio" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
+        {/* <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" /> */}
         <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       </Head>
-      <Header />
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className={styles.section} id="Home">
-        <HomeSection />
+        <HomeSection darkMode={darkMode}/>
       </div>
       <div className={styles.section} id="Skills">
-        <Skills />
+        <Skills darkMode={darkMode}/>
       </div>
       <div className={styles.longsection} id="Projects">
-        <Projects />
+        <Projects darkMode={darkMode}/>
       </div>
       <div className={styles.footer} id="Contact">
-        <Footer />
+        <Footer darkMode={darkMode}/>
       </div>
-      <ul className={styles.circles}>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-
+      {darkMode &&
+        <ul className={styles.circles}>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      }
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import styles from '../Skills/Skills.module.scss'
 import { SkillItem } from './SkillItem'
+import css from 'classnames';
 
 const skillList = [
     {
@@ -31,6 +32,10 @@ const skillList = [
         img:"https://cdn-icons-png.flaticon.com/512/5968/5968358.png"
     },
     {
+        skill:"Styled Component",
+        img:" https://www.styled-components.com/atom.png"
+    },
+    {
         skill:"NodeJS",
         img:"https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png"
     },
@@ -48,9 +53,9 @@ const skillList = [
     }
   
 ]
-export const Skills = () => {
+export const Skills = ({darkMode}) => {
     return (
-        <div className={styles.container}>
+        <div className={css(darkMode ? styles.container : styles.lightContainer)}>
             <div className={styles.title}>Skills</div>
             <div className={styles.skills}>
                 
@@ -62,12 +67,22 @@ export const Skills = () => {
             </div>
             <div className={styles.footer}>
                 <a href="#Projects" className={styles.arrow}>
-                    <img
-                        src="/down-arrow.png"
-                        width={30}
-                        height={30}
-                        className={styles.arrowimg}
-                    />
+                {darkMode ?
+                        <img
+                            src="/down-arrow.png"
+                            width={30}
+                            height={30}
+                            className={styles.arrowimg}
+                        /> 
+                        :
+                        <img
+                            src="/down-arrow.png"
+                            width={30}
+                            height={30}
+                            className={styles.arrowimg}
+                            style={{filter:"contrast(100)"}}
+                        />
+                    }
                 </a>
             </div>
         </div>

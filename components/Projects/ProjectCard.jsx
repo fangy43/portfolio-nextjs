@@ -1,8 +1,8 @@
 import styles from '../Projects/ProjectCard.module.scss'
-
-export const ProjectCard = ({ project }) => {
+import css from 'classnames'
+export const ProjectCard = ({ project ,darkMode}) => {
     return (
-        <div className={styles.card}>
+        <div className={css(darkMode ? styles.card : styles.lightCard)}>
             <div className={styles.imagebox}>
                 <img className={styles.img} src={project.img} />
             </div>

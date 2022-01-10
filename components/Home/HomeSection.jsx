@@ -1,11 +1,12 @@
 import styles from '../Home/HomeSection.module.scss'
 import Link from 'next/link'
+import css from 'classnames';
 
-export const HomeSection = () => {
+export const HomeSection = ({ darkMode }) => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.home}>
-                <div className={styles.textsection}>
+                <div className={css(darkMode ? styles.textsection : styles.lightTextsection)}>
                     <div className={styles.name}>
                         Nattarat Serirat
                     </div>
@@ -25,25 +26,35 @@ export const HomeSection = () => {
 
                     </div>
                 </div>
+
                 <div className={styles.box}>
-                   
-                        <img
-                            src="/Profile.png"
-                            alt="Picture of Nattarat"
-                            quality={100}
-                            className={styles.img}
-                        />
-                      
+                    <img
+                        src="/Profile.png"
+                        alt="Picture of Nattarat"
+                        quality={100}
+                        className={styles.img}
+                    />
                 </div>
+
             </div>
             <div className={styles.footer}>
                 <a href="#Skills" className={styles.arrow}>
-                    <img
-                        src="/down-arrow.png"
-                        width={30}
-                        height={30}
-                        className={styles.arrowimg}
-                    />
+                    {darkMode ?
+                        <img
+                            src="/down-arrow.png"
+                            width={30}
+                            height={30}
+                            className={styles.arrowimg}
+                        /> 
+                        :
+                        <img
+                            src="/down-arrow.png"
+                            width={30}
+                            height={30}
+                            className={styles.arrowimg}
+                            style={{filter:"contrast(100)"}}
+                        />
+                    }
                 </a>
             </div>
         </div >

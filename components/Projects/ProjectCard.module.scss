@@ -27,18 +27,18 @@
         }
         .period {
             font-size: 18px;
-            color: #111111;
+            color: #444444;
             font-weight: 500;
         }
         .description {
-            font-size: 26px;
+            font-size: 22px;
         }
     }
     .link {
         width: 300px;
 
         .btn {
-            // background: linear-gradient(to top, #4a00e0, #8e2de2); /* Green */
+            font-family:'Sora';
             background: linear-gradient(to bottom, #fda517, #fff12d);
             border: none;
             color: white;
@@ -46,7 +46,68 @@
             text-align: center;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 20px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #111111;
+            font-weight: 600;
+            box-shadow: 0 0.2em 0.2em -0.2em #fda517;
+        }
+        .btn:hover {
+            box-shadow: 0 0.5em 0.5em -0.4em #fda517;
+            transform: translateY(-0.25em);
+        }
+    }
+}
+
+.lightCard {
+    width: 100%;
+    height: 200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #c2c2c2;
+    &:hover {
+        transform: translateY(-0.25em);
+    }
+    .textbox {
+        display: flex;
+        flex-direction: column;
+        margin: 0 2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+        color: #000000;
+        gap: 5px;
+        width: 100%;
+        .title {
+            font-size: 36px;
+            font-weight: 700;
+        }
+        .period {
+            font-size: 18px;
+            color: #444444;
+            font-weight: 500;
+        }
+        .description {
+            font-size: 22px;
+        }
+    }
+    .link {
+        width: 300px;
+
+        .btn {
+            font-family:'Sora';
+            background: linear-gradient(to bottom, #ffc400, #ff922d);
+            border: none;
+            color: white;
+            padding: 14px 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
             cursor: pointer;
             color: #111111;
             font-weight: 600;
@@ -66,7 +127,7 @@
 }
 
 @media only screen and (max-width: 1228px) {
-    .card {
+    .card,.lightCard {
         width: 100%;
         height: 100%;
         flex-direction: column;
