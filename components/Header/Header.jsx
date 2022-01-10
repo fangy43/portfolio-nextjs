@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive'
 import Switch from "react-switch";
 export const Header = ({ darkMode, setDarkMode }) => {
     const isMobile = useMediaQuery({
-        query: '(max-width: 768px)'
+        query: '(max-width-device: 768px)'
     })
 
     return (
