@@ -50,7 +50,7 @@ const skillList = [
     {
         skill:"Figma",
         img:"https://cdn2.downdetector.com/static/uploads/logo/figma2.png"
-    }
+    },
   
 ]
 export const Skills = ({darkMode}) => {
