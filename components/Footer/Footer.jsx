@@ -19,9 +19,9 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className={styles.contactItem}>
-                    <i className="fa fa-facebook-square"></i>
+                    <i className="fa fa-linkedin-square"></i>
                     <div className={styles.details}>
-                        <div className={styles.method}>Facebook</div>
+                        <div className={styles.method}>Linkedin</div>
                         <div className={styles.data}>Nattarat Serirat</div>
                     </div>
                 </div>
