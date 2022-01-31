@@ -23,6 +23,11 @@ export const Header = ({ darkMode, setDarkMode }) => {
                                     </Link>
                                 </li>
                                 <li>
+                                    <Link href="#Education">
+                                        <a>Education</a>
+                                    </Link>
+                                </li>
+                                <li>
                                     <Link href="#Skills">
                                         <a>Skills</a>
                                     </Link>

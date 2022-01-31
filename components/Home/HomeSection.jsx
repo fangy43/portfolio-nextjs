@@ -38,7 +38,7 @@ export const HomeSection = ({ darkMode }) => {
 
             </div>
             <div className={styles.footer}>
-                <a href="#Skills" className={styles.arrow}>
+                <a href="#Education" className={styles.arrow}>
                     {darkMode ?
                         <img
                             src="/down-arrow.png"

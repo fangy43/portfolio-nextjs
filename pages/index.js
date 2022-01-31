@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Header, HomeSection, Skills, Projects, Footer } from '../components'
+import { Header, HomeSection, Skills, Projects, Footer, Education } from '../components'
 import styles from '../styles/Home.module.scss'
 import { useState ,useEffect} from 'react'
 
@@ -22,6 +22,9 @@ export default function Home() {
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className={styles.section} id="Home">
         <HomeSection darkMode={darkMode}/>
+      </div>
+      <div className={styles.section} id="Education">
+        <Education darkMode={darkMode}/>
       </div>
       <div className={styles.section} id="Skills">
         <Skills darkMode={darkMode}/>
