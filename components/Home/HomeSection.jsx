@@ -17,7 +17,7 @@ export const HomeSection = ({ darkMode }) => {
                         Hi! My name is Fang. I&apos;m 4th-year student at King Mongkut&apos;s Institute of Technology Ladkrabang. I&apos;ve worked in the field of software development. Now I&apos;m looking for a job that will improve my software development skills
                     </div>
                     <div className={styles.btnbox}>
-                        <Link href="#Skills">
+                        <Link href="#Education">
                             <button className={styles.btn1}>Get Started</button>
                         </Link>
                         <a href="https://github.com/fangy43" target="_blank" rel="noreferrer">

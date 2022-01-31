@@ -24,8 +24,10 @@ export const Education = ({ darkMode }) => {
     return (
         <div className={css(darkMode ? styles.container : styles.lightContainer)}>
             <div className={styles.title}>Education</div>
-            <div className={styles.timeline}>
-                <VerticalTimeline lineColor={darkMode ? "white" : "#fda517"}
+            <div style={{width:'100%'}}>
+                <VerticalTimeline 
+                lineColor={darkMode ? "white" : "#fda517"}
+                className={styles.timeline}
                 >
                     {education.map((ed) =>
                         <VerticalTimelineElement
