@@ -4,6 +4,7 @@ import styles from '../Projects/Projects.module.scss'
 import { ProjectCard } from './ProjectCard'
 import { OtherCard } from './OtherCard'
 import css from 'classnames'
+
 const cardList = [
     {
         title: "Educa",
@@ -29,9 +30,8 @@ const ghexclude = [
 
 export const Projects = ({darkMode}) => {
     const [githubRepos, setGithubRepos] = useState([])
-
-    const fetchRepos = () => {
-        axios.get(`https://api.github.com/users/fangy43/repos`)
+    const fetchRepos = async () => {
+        return await axios.get(`https://api.github.com/users/fangy43/repos`)
             .then(res => {
                 const ghData = res.data
                 ghexclude.forEach(exc => {

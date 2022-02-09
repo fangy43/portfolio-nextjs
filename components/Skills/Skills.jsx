@@ -61,7 +61,7 @@ export const Skills = ({darkMode}) => {
                 
                 <div className={styles.skillsLogo}>
                     {skillList.map((s,i)=>
-                    <SkillItem imgLink={s.img} name={s.skill} key={i}/>
+                    <SkillItem imgLink={s.img} name={s.skill} key={i} index={i}/>
                     )}
                 </div>
             </div>

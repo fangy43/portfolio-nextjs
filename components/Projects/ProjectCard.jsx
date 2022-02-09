@@ -1,8 +1,14 @@
 import styles from '../Projects/ProjectCard.module.scss'
 import css from 'classnames'
-export const ProjectCard = ({ project ,darkMode}) => {
+import { motion } from 'framer-motion'
+
+export const ProjectCard = ({ project, darkMode }) => {
     return (
-        <div className={css(darkMode ? styles.card : styles.lightCard)}>
+        <motion.div
+            className={css(darkMode ? styles.card : styles.lightCard)}
+            animate={{ scale: [1.01, 0.99] }}
+            transition={{ duration: Math.random() * 3 + 1.5, delay: Math.random() * 3 + 1.5, repeat: Infinity, repeatType: "reverse", }}
+        >
             <div className={styles.imagebox}>
                 <img className={styles.img} src={project.img} />
             </div>
@@ -12,10 +18,10 @@ export const ProjectCard = ({ project ,darkMode}) => {
                 <div className={styles.description}>{project.description}</div>
             </div>
             <div className={styles.link}>
-            <a href={project.link} target="_blank" rel="noreferrer">
-                <button className={styles.btn}>See Github</button>
-            </a>
+                <a href={project.link} target="_blank" rel="noreferrer">
+                    <button className={styles.btn}>See Github</button>
+                </a>
             </div>
-        </div >
+        </motion.div >
     )
 }
