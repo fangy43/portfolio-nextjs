@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Fangy</title>
         <meta name="description" content="Nattarat Serirat's Portfolio" />
-        <meta property="og:image" content="/preview-img.png" />
+        <meta property="og:image" content="https://github.com/fangy43/portfolio-nextjs/blob/main/public/preview-img.png" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
