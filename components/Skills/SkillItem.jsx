@@ -5,13 +5,13 @@ export const SkillItem = ({ imgLink, name, index }) => {
     return (
         <motion.div
             className={styles.container}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: Math.random(), duration: 2 }} //0-2
+            initial={{ opacity:0}}
+            whileInView={{ opacity:[0,1],scale:[0,1.1,1] }}
+            transition={{duration:Math.random()*1.5+0.5,type: "spring", bounce: 0.5}}
         >
             <motion.img
-                animate={{ y: [0, (Math.random() * -4) -3, 0] }}  //-3 - -7
-                transition={{ duration: Math.random() * 3 + 1.5, repeat: Infinity, repeatType: "reverse", }} //0-2
+                // animate={{ y: [0, (Math.random() * -4) -3, 0] }}  //-3 - -7
+                // transition={{ duration: Math.random() * 3 + 1.5, repeat: Infinity, repeatType: "reverse", }} //0-2
                 className={styles.img}
                 src={imgLink}
             />

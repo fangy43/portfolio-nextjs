@@ -2,11 +2,14 @@ import styles from '../Projects/ProjectCard.module.scss'
 import css from 'classnames'
 import { motion } from 'framer-motion'
 
-export const ProjectCard = ({ project, darkMode }) => {
+export const ProjectCard = ({ project, darkMode, index }) => {
     return (
-        <div
+        <motion.div
             className={css(darkMode ? styles.card : styles.lightCard)}
-         
+            initial={{ opacity:0,x:1000 }}
+            whileInView={{ opacity:1,x:0 }}
+            transition={{duration:1,delay:index-0.5}}
+            viewport={{once:true}}
         >
             <div className={styles.imagebox}>
                 <img className={styles.img} src={project.img} />
@@ -21,6 +24,6 @@ export const ProjectCard = ({ project, darkMode }) => {
                     <button className={styles.btn}>See Github</button>
                 </a>
             </div>
-        </div >
+        </motion.div >
     )
 }

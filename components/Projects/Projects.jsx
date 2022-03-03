@@ -51,7 +51,7 @@ export const Projects = ({darkMode}) => {
             <div className={styles.featured}>
                 <div className={styles.subtitle}>Featured</div>
                 {cardList.map((project,index) =>
-                    <ProjectCard project={project} key={index} darkMode={darkMode}/>
+                    <ProjectCard project={project} key={index} darkMode={darkMode} index={index}/>
                 )}
             </div>
             <div className={styles.other}>
