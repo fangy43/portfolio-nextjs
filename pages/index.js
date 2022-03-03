@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Header, HomeSection, Skills, Projects, Footer, Education } from '../components'
 import styles from '../styles/Home.module.scss'
-import { useState ,useEffect} from 'react'
+import { useState } from 'react'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true)

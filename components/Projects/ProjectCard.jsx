@@ -4,10 +4,9 @@ import { motion } from 'framer-motion'
 
 export const ProjectCard = ({ project, darkMode }) => {
     return (
-        <motion.div
+        <div
             className={css(darkMode ? styles.card : styles.lightCard)}
-            animate={{ scale: [1.01, 0.99] }}
-            transition={{ duration: Math.random() * 3 + 1.5, delay: Math.random() * 3 + 1.5, repeat: Infinity, repeatType: "reverse", }}
+         
         >
             <div className={styles.imagebox}>
                 <img className={styles.img} src={project.img} />
@@ -22,6 +21,6 @@ export const ProjectCard = ({ project, darkMode }) => {
                     <button className={styles.btn}>See Github</button>
                 </a>
             </div>
-        </motion.div >
+        </div >
     )
 }

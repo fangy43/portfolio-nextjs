@@ -12,29 +12,29 @@ export const HomeSection = ({ darkMode }) => {
                         className={styles.name}
                         initial={{ y: 40, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 1, type: "Inertia", stiffness: 100 }}
+                        transition={{ duration: 2, type: "spring", bounce: 0.5 }}
                     >
                         Nattarat Serirat
                     </motion.div>
                     <motion.div
                         className={styles.role}
-                        initial={{ y: 40, opacity: 0 }}
+                        initial={{ y: 50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 1, delay: 0.5, type: "Inertia", stiffness: 100 }}>
+                        transition={{ duration: 2, delay: 0.75, type: "spring", bounce: 0.5 }}>
                         Software Developer
                     </motion.div>
                     <motion.div
                         className={styles.introduce}
-                        initial={{ y: 40, opacity: 0 }}
+                        initial={{ y: 50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 1, delay: 0.75, type: "Inertia", stiffness: 100 }}>
+                        transition={{ duration: 2, delay: 1, type: "spring", bounce: 0.5 }}>
                         Hi! My name is Fang. I&apos;m 4th-year student at King Mongkut&apos;s Institute of Technology Ladkrabang. I&apos;ve worked in the field of software development. Now I&apos;m looking for a job that will improve my software development skills
                     </motion.div>
                     <motion.div
                         className={styles.btnbox}
-                        initial={{ y: 40, opacity: 0 }}
+                        initial={{ y: 50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 1, delay: 0.75, type: "Inertia", stiffness: 100 }}
+                        transition={{ duration: 2, delay: 1, type: "spring", bounce: 0.5 }}
                     >
                         <Link href="#Education">
                             <button className={styles.btn1}>Get Started</button>
@@ -47,14 +47,14 @@ export const HomeSection = ({ darkMode }) => {
                 </div>
                 <motion.div
                     animate={{ y: [0, -10, 0] }}
-                    transition={{ delay:2,duration: 2, repeat: Infinity, repeatType: "reverse", }}
+                    transition={{ delay: 2, duration: 1.5, repeat: Infinity, repeatType: "reverse", type: "spring", bounce: 0.5 }}
+                   
                 >
                     <motion.div
-                        initial={{ opacity: 0 ,scale:0.8 }}
-                        animate={{ opacity: 1 ,scale:1}}
-                        transition={{ duration: 2 }}
+                        animate={{ opacity: [0, 1], scale: [0.75, 1.125, 1] }}
+                        transition={{ duration: 2, type: "spring", bounce: 0.5 }}
                     >
-                        <div className={styles.box}>
+                        <div className={styles.box} >
                             <img
                                 src="/Profile.png"
                                 alt="Picture of Nattarat"
