@@ -64,12 +64,11 @@
     display: block;
     list-style: none;
     // background: rgba(255, 255, 255, 0.2);
-    background: radial-gradient( #fda517, #000000);
+    background: radial-gradient( #ff9114, #000000);
     animation: animate 25s linear infinite;
     right: -150px;
-    box-shadow: 0 0 100px #000000;
     border-radius: 50%;
-    animation-duration: 20s;
+    animation-duration: 25s;
 }
 
 .circles li:nth-child(1) {
@@ -148,38 +147,38 @@
 
 .circles li:nth-child(11) {
     bottom: 25%;
-    width: 8px;
-    height: 8px;
+    width: 18px;
+    height: 18px;
     animation-delay: 0s;
 }
 
 .circles li:nth-child(12) {
     bottom: 10%;
-    width: 2px;
-    height: 2px;
+    width: 25px;
+    height: 25px;
     animation-delay: 2s;
     animation-duration: 12s;
 }
 
 .circles li:nth-child(13) {
     bottom: 70%;
-    width: 2px;
-    height: 2px;
+    width: 20px;
+    height: 20px;
     animation-delay: 4s;
 }
 
 .circles li:nth-child(14) {
     bottom: 40%;
-    width: 6px;
-    height: 6px;
+    width: 30px;
+    height: 30px;
     animation-delay: 0s;
     animation-duration: 18s;
 }
 
 .circles li:nth-child(15) {
     bottom: 65%;
-    width: 2px;
-    height: 2px;
+    width: 20px;
+    height: 20px;
     animation-delay: 10s;
 }
 
@@ -298,13 +297,13 @@
 
 @keyframes animate {
     20% {
-        transform: translateX(0) translateY(0) rotate(-45deg);
+        transform: translateX(0) translateY(0) rotate(0deg);
         opacity: 0.8;
        
     }
 
     100% {
-        transform: translateX(-2000px) translateY(4000px) ;
+        transform: translateX(-2000px) translateY(1000px) rotate(7200deg) ;
         opacity: 0;
     }
 }
