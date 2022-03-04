@@ -5,9 +5,10 @@ export const SkillItem = ({ imgLink, name, index }) => {
     return (
         <motion.div
             className={styles.container}
-            initial={{ opacity:0}}
-            whileInView={{ opacity:[0,1],scale:[0,1.1,1] }}
-            transition={{duration:Math.random()*1.5+0.5,type: "spring", bounce: 0.5}}
+            initial={{ opacity:0,scale:0.5}}
+            whileInView={{ opacity:1,scale:1 }}
+            transition={{duration:Math.random()+0.5,type: "spring", bounce: 0.5}}
+            viewport={{once:true}}
         >
             <motion.img
                 // animate={{ y: [0, (Math.random() * -4) -3, 0] }}  //-3 - -7

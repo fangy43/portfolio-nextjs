@@ -6,10 +6,10 @@ export const ProjectCard = ({ project, darkMode, index }) => {
     return (
         <motion.div
             className={css(darkMode ? styles.card : styles.lightCard)}
-            initial={{ opacity:0,x:1000 }}
-            whileInView={{ opacity:1,x:0 }}
-            transition={{duration:1,delay:index-0.5}}
-            viewport={{once:true}}
+            initial={{ opacity:0,y:50 }}
+            whileInView={{ opacity:1,y:0 }}
+            transition={{duration:1.5,delay:index-0.5,type: "spring", bounce: 0.5}}
+            viewport={{once:true }}
         >
             <div className={styles.imagebox}>
                 <img className={styles.img} src={project.img} />

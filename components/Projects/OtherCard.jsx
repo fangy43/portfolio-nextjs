@@ -9,7 +9,7 @@ export const OtherCard = ({ project, darkMode }) => {
                 className={css(darkMode ? styles.card : styles.lightCard)}
                 initial={{ opacity:0,y:40 }}
                 whileInView={{ opacity: [0, 1], y: [50, 0] }}
-                transition={{ duration: 1,}}
+                transition={{ duration:1,type: "spring", bounce: 0.5}}
                 viewport={{ once: true }}
             >
                 <img
