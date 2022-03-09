@@ -55,7 +55,7 @@ export const HomeSection = ({ darkMode }) => {
                     >
                         <div className={styles.box} >
                             <img
-                                src="/Profile.png"
+                                src="/Profile.webp"
                                 alt="Picture of Nattarat"
                                 quality={100}
                                 className={styles.img}
