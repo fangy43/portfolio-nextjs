@@ -16,7 +16,7 @@ const education = [
         subtitle: "High School",
         period: "2012 - 2018",
         detail: "Science-Math program, Bangkok, Thailand",
-        gpa: "3.60",
+        gpa: "3.63",
     }
 ]
 
