@@ -45,7 +45,6 @@ export const Education = ({ darkMode }) => {
                                 <br />
                                 GPA: {ed.gpa}
                             </p>
-                            
                         </VerticalTimelineElement>
                     )}
 
